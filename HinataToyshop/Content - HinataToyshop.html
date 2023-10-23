@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Content - HinataToyshop</title>
+    <link rel="stylesheet" href="CSS/Content - HinataToyshop.css">
+	<link rel="icon" href="Images/BaratieBakeryIcon.png" type="image/jpg" sizes="16x16">
+
+</head>
+<body>
+	<div id="HeaderHere"></div>
+    <script>
+        load("Header - HinataToyshop.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("HeaderHere").innerHTML = req.responseText;
+        }
+    </script>
+	
+    <br><br><br><br><br>
+	
+</body>
+	<div id="FooterHere"></div>
+    <script>
+        load("Footer - HinataToyshop.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("FooterHere").innerHTML = req.responseText;
+        }
+    </script>
+</html>
