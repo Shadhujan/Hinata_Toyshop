@@ -1,35 +1,35 @@
 body
 {
     margin: 0;
-    font-family: 'Lato', sans-serif;
-	background-color: #DEC3FF
+    font-family: 'Osake', sans-serif;
+	background-color: #080402
 }
 h1
 {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding: 50px 0;
-    letter-spacing: 2px;
-    font-weight: 700;
+    padding: 13px 0;
+    letter-spacing: 1px;
+    font-weight: 300px;
     text-transform: capitalize;
     text-align: center;
-    color: #2B0047;
+    color: #0F3041;
 }
 
-#box 
+.box 
 {
     width: 100%;
-    background-color: #EFE1FF;
+    background-color: #75E7F5;
     align-content: center;
     border-radius: 50px;
     transition: box-shadow .2s;
 }
 
-#box:hover
+.box:hover
 {
-    box-shadow: 1px 1px 15px 10px #2B0047;
+    box-shadow: 1px 1px 15px 10px #0F3041;
 }
-#box a 
+.box a 
 {
     text-decoration: none;
     color: rgb(29, 29, 29);
@@ -40,8 +40,8 @@ h1
 #HomeConentRow
 {
     display: grid;
-    grid-gap: 70px 20px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 80px 20px;
+    grid-template-columns: repeat(5, 1fr); /*content divided 5 column in a row*/
     width: 80%;
     margin:auto;
     padding-bottom: 40px;
@@ -59,32 +59,32 @@ h1
     border-top-right-radius: 50px;
 }
 
-#ProductDetails
+.ProductDetails
 {
     padding: 0 15px;
     text-transform: capitalize;
 }
 
-#HomeBakeryName 
+#HomeToyshopName 
 {
     font-size: 100px;
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
-#HomeBakeryName a
+#HomeToyshopName a
 {
     text-decoration: none;
     color: #2B0047;
 }
 
-#HomeBakeryName a:hover
+#HomeToyshopName a:hover
 {
     color:#BB86FC;
     cursor:default;
 }
 
 
-#HomeName
+.HomeName
 {
     width: 100%;
     margin: auto;
@@ -95,7 +95,7 @@ h1
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
 }
-#HomeName a
+.HomeName img
 {
 	color: #2B0047;
     text-decoration: none;
@@ -103,8 +103,81 @@ h1
 	cursor:default;
     transition: font-size 1s, letter-spacing 1s;
 }
-#HomeName a:hover
+.HomeName img:hover
 {
-    font-size: 150px;
+    image-resolution: snap;
     letter-spacing: 20px;
+}
+
+.outer {
+  display:block;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow:hidden;
+ position:relative;
+}
+
+.innerAF {
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  display:block;
+  background: url("../Images/AFH.jpeg")0 0, url("../Images/AFH1.jpg")200px 0, url("../Images/AFH3.jpeg")400px 0, url("../Images/AFH4.jpeg") 600px 0, url("../Images/AFH2.jpeg")800px 0;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+
+.outer:hover .innerAF, .outer:focus .innerAF{
+animation:swap 5s linear infinite;  
+}
+
+.outer:focus{
+  border:2px solid red;
+}
+
+@keyframes swap{
+  0%{transform:translateX(-200px)}
+  19.999%{transform:translateX(-200px)}
+  20%{transform:translateX(-400px)}
+  39.999%{transform:translateX(-400px)}
+  40%{transform:translateX(-600px)}
+  59.999%{transform:translateX(-600px)}
+  60%{transform:translateX(-800)}
+  79.999%{transform:translateX(-800)}
+  80%{transform:translateX(0)}
+  99.999%{transform:translateX(0)}
+}
+
+.inner2 {
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  display:block;
+  background: url("../Images/AFH.jpeg")0 0, url("../Images/AFH1.jpg")200px 0, url("../Images/AFH3.jpeg")400px 0, url("../Images/AFH4.jpeg") 600px 0, url("../Images/AFH2.jpeg")800px 0;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.outer:hover .inner2,.outer:focus .inner2{
+animation:swap 5s linear infinite;  
+}
+.outer:focus{
+  border:2px solid red;
+}
+@keyframes swap{
+  0%{transform:translateX(-200px)}
+  19.999%{transform:translateX(-200px)}
+  20%{transform:translateX(-400px)}
+  39.999%{transform:translateX(-400px)}
+  40%{transform:translateX(-600px)}
+  59.999%{transform:translateX(-600px)}
+  60%{transform:translateX(-800)}
+  79.999%{transform:translateX(-800)}
+  80%{transform:translateX(0)}
+  99.999%{transform:translateX(0)}
 }

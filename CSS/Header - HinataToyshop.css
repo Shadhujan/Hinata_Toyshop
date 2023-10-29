@@ -66,7 +66,7 @@ body
 
 #SearchBar a:hover
 {
-    color:#C00003;
+    color:#C00000;
     cursor:pointer;
     font-size: 30px;
 }
@@ -75,21 +75,23 @@ body
 {
 	font-size: 24px; 
 	font-family: 'Karla', sans-serif;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    /*display:grid;
+    grid-template-columns: 1fr 1fr;*/
     transition: font-size 0.1s;
 }
 #Category a
 {
     text-decoration: none;
     color:#28282B;
+    transition: color 0.1s, font-size 0.1s;
+	cursor: default;
 }
 
 #Category a:hover
 {
-    color:#080402;
+    color:#C00000;
     cursor: pointer;
-	font-size: 26px; 
+	font-size: 30px; 
 }
 
 SearchBar
@@ -102,44 +104,54 @@ SearchBar
 
 AddedToCart
 {
-    font-size: 1.5em;
-    margin-right: 25px;
+    /*font-size: 1.5em;
+    margin-right: 25px;*/
 }
-#user
+.user
 {
     display: flex;
     /* float: right; */
     align-items: center;
+	
 }
 
 #UserIcon
 {
-    font-size: 40px;
+	
+    /*font-size: 40px;
     transition: font-size 2s;
-    border-radius: 140px;
-    font-size: 60px;
+    font-size: 60px;*/
 }
 #UserIcon:hover
 {
-    font-size: 60px;
+    width: 50px;
+	height: auto;
 }
 #HeadBar img
 {
 	
-    border-radius: 140px;
+    border-radius:0;
+	width: 40px;
+	height: auto;
 }
 #input 
 {
     width: 18em;
-    height: 3em;
-    padding: 2px 50px;
-    background-color:#28282B;
-    border: none;
-    border-radius: 5px;
+    height: 3.5em;
+    padding: 5px 30px;
+    background-color: #898181;
+    border-top: groove;
+	border-color: red;
+	border-top-color: aqua;
+	border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 #input::placeholder
 {
     font-weight: bold;
+	align-self: center;
+	font-family: 'Osake';
+	color: beige;
 }
 #input:focus
 {

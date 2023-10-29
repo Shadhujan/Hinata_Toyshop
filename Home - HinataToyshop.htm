@@ -1,8 +1,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
+<!--
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+-->
     <title> Home - HinataToyshop</title>
 	
+	
+<link href="CSS/Home - HinataToyshop.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="HeaderHere">	</div>	
@@ -15,45 +20,75 @@
             req.send(null);
             document.getElementById("HeaderHere").innerHTML = req.responseText;
         }
+		
+		function onMouseOver(){
+			let 
+			
+		}
     </script>
     <br><br><br>	<br><br>
     
     <div id="HomeTable">
       
-        <div id="HomeName"><a><b>Hinata Toy Shop</b></a></div>
+        <div class="HomeName"><img src="Images/randBG.png" width="1518px" alt="randBG"></div>
         <br><br>
         <div id="HomeConentRow">
-			<div id="box">
-				<img src="#">
-					<div id="ProductDetails">
+			<div class="box">
+				<!--<img src="#">-->
+				<a href="#" class="outer">
+					<span class="innerAF">
+					</span>
+				</a>
+				<a>
+					<div class="ProductDetails">
 						<h1>Action Figures</h1>
 					</div>
 				</a>
 			</div>
-			<div id="box">
-				<img src="#">
-					<div id="ProductDetails">
+			<div class="box">
+				<!--<img src="#">-->
+				<a href="#" class="outer">
+					<span class="innerS">
+					</span>
+				</a>
+				<a>
+					<div class="ProductDetails">
 						<h1>Stickers</h1>
 					</div>
 				</a>
 			</div>
-			<div id="box">
-				<img src="#">
-					<div id="ProductDetails">
+			<div class="box">
+				<!--<img src="#">-->
+				<a href="#" class="outer">
+					<span class="innerP">
+					</span>
+				</a>
+				<a>
+					<div class="ProductDetails">
 						<h1>Posters</h1>
 					</div>
 				</a>
 			</div>
-			<div id="box">
-				<img src="#">
-					<div id="ProductDetails">
+			<div class="box">
+				<!--<img src="#">-->
+				<a href="#" class="outer">
+					<span class="innerC">
+					</span>
+				</a>
+				<a>
+					<div class="ProductDetails">
 						<h1>Clothes</h1>
 					</div>
 				</a>
 			</div>
-			<div id="box">
-				<img src="#">
-					<div id="ProductDetails">
+			<div class="box">
+				<!--<img src="#">-->
+				<a href="#" class="outer">
+					<span class="innerA">
+					</span>
+				</a>
+				<a>
+					<div class="ProductDetails">
 						<h1>Accessories</h1>
 					</div>
 				</a>
@@ -61,7 +96,6 @@
         </div>
     </div>
 <div id="FooterHere">
-	<div id="FooterHere">	</div>	
 	<script>
         load("Footer - HinataToyshop.html");
         function load(url)
