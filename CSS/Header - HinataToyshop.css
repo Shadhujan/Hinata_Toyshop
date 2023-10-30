@@ -138,25 +138,27 @@ AddedToCart
 {
     width: 18em;
     height: 3.5em;
-    padding: 5px 30px;
-    background-color: #898181;
-    border-top: groove;
-	border-color: red;
+    padding: 3px 30px;
+    background-color: #D4D4D4;
+	border-radius: 11px;
+	border-color: black;
+    /*border-top: groove;
 	border-top-color: aqua;
 	border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;*/
 }
 #input::placeholder
 {
     font-weight: bold;
 	align-self: center;
 	font-family: 'Osake';
-	color: beige;
+	color: #0F0F0F;
 }
 #input:focus
 {
     outline: none;
 }
+
 #user a
 {
     color: rgb(29, 29, 29)

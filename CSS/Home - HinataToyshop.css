@@ -37,7 +37,7 @@ h1
 
 
 
-#HomeConentRow
+#HomeContentRow
 {
     display: grid;
     grid-gap: 80px 20px;
@@ -48,11 +48,11 @@ h1
 	/*
 	display: grid;
     grid-gap: 50px 5px;
-    width: 25%;
+    width: 25%;	
     margin: auto;
     padding-bottom: 40px;*/
 }
-#HomeConentRow img
+#HomeContentRow img
 {
     width: 100%;
     border-top-left-radius: 50px;

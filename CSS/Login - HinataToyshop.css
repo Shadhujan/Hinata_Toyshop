@@ -1,0 +1,109 @@
+/* Login form styles */
+body {
+    background-size: auto;
+	background-image: url("../Images/login.jpg");
+	background-position: top;
+	font-family: "Retro Gaming";
+	background-color: black;
+	z-index: 1;
+}
+.wrapper{
+	background: hsla(0, 0%, 0%, 0.5);
+	background: cover;
+	margin: auto;
+	min-height: 110vh;
+}
+.container {
+    position: relative;
+    top: 200px;
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background:rgba(0,0,0, 0.8);
+    border-radius: 10%;
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+	 color: aliceblue;
+	  
+  }
+  
+  .container input {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .container input:focus {
+    border-color: #66afe9;
+  }
+    
+  .container .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: hsla(0,0%,35%,0.70);
+    color: #fff;
+    border: hsla(0,3%,83%,0.85);
+	border-style: groove;
+    border-radius: 50px;
+	font-family: "Retro Gaming";
+  }
+  
+  .container .btn:hover {
+    background-color: hsla(0,0%,53%,0.88);
+	cursor: pointer;
+  }
+  
+  .container .forgot-password {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+	color: #fff;
+  }
+  
+  .container .forgot-password a {
+    color: #04AA6D;
+  }
+
+/*
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    filter: blur(5px);
+  }
+
+
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    }
+    
+*/
+    .box .input{
+        border: dotted;
+        background: none;
+        border-color: snow;
+		font-family: "Retro Gaming";
+		color: aliceblue;
+    }
