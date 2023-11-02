@@ -2,12 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Login - HinataToyshop</title>
-<link href="CSS/Login - HinataToyshop.css" rel="stylesheet" type="text/css">
+    <title>SignUP - HinataToyshop</title>
+<link href="CSS/SignUp - HinataToyshop.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="wrapper">
-		<nav class="nav">
+	<nav class="nav">
 			<div class="nav-logo">
 				<p>Hinata &nbsp; Toyshop</p>
 			</div>
@@ -16,22 +15,26 @@
 					<li><a href="Home - HinataToyshop.htm" class="link">Home</a></li>
 					<li><a href="ProductPage1 - HinataToyshop.html" class="link">Product</a></li> 
 					<li><a href="Cart - HinataToyshop.html" class="link">Add to Cart</a></li> 
+					<li id="login"><a href="Login - HinataToyshop.html" class="link">login</a></li>
 				</ul>
 			</div>			
     	</nav>
+	<div class="wrapper">
     <form action="/login" method="post">
         <div class="container">
-          <h1>Return Back to the Golden Era of Anime</h1>
+          <h1>Get in to the WORLD!!</h1>
+			<div class="box">
+                <input class="input" type="text" name="name" placeholder="Your Name goes here" required>
+            </div>
             <div class="box">
                 <input class="input" type="email" name="email" placeholder="Your email goes here" required>
             </div>
             <div class="box">
                 <input class="input" type="password" name="password" placeholder="Your password goes here" required>
             </div>
-          <button type="submit" class="btn btn-primary">Return to the 00s</button>
+          <button type="submit" class="btn btn-primary">GET Into Here</button>
       
-			<p class="forgot-password">Anata, koko atarashii ne???</p><p class="forgot-password"> <a href="SignUp - HinataToyshop.html">Click here to Sign Up</a></p>
-        </div>
+			</div>
       </form>
 </body>
 </html>

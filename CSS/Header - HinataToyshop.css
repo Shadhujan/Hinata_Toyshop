@@ -118,9 +118,9 @@ AddedToCart
 #UserIcon
 {
 	
-    /*font-size: 40px;
+    font-size: 40px;
     transition: font-size 2s;
-    font-size: 60px;*/
+    font-size: 60px;
 }
 #UserIcon:hover
 {

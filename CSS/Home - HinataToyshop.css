@@ -1,8 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body
 {
     margin: 0;
     font-family: 'Osake', sans-serif;
-	background-color: #080402
+    background-color: #fff;
 }
 h1
 {
@@ -19,7 +26,7 @@ h1
 .box 
 {
     width: 100%;
-    background-color: #75E7F5;
+    background-color: hsla(193,42%,31%,0.40);
     align-content: center;
     border-radius: 50px;
     transition: box-shadow .2s;
@@ -65,6 +72,7 @@ h1
     text-transform: capitalize;
 }
 
+/*
 #HomeToyshopName 
 {
     font-size: 100px;
@@ -82,6 +90,7 @@ h1
     color:#BB86FC;
     cursor:default;
 }
+*/
 
 
 .HomeName
@@ -89,25 +98,21 @@ h1
     width: 100%;
     margin: auto;
     padding: 20px 0;
-    text-align: center;
-    background-color: #DEC3FF;
-    font-size: 100px;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;
+	background: #fff;
 }
 .HomeName img
-{
+{	
+	
 	color: #2B0047;
-    text-decoration: none;
     position: relative;
 	cursor:default;
-    transition: font-size 1s, letter-spacing 1s;
 }
 .HomeName img:hover
 {
     image-resolution: snap;
     letter-spacing: 20px;
 }
+
 
 .outer {
   display:block;
@@ -153,17 +158,104 @@ animation:swap 5s linear infinite;
   99.999%{transform:translateX(0)}
 }
 
-.inner2 {
+.innerS {
   width: 1000px;
   height: 200px;
   border-radius: 30px;
   cursor:pointer;
   display:block;
-  background: url("../Images/AFH.jpeg")0 0, url("../Images/AFH1.jpg")200px 0, url("../Images/AFH3.jpeg")400px 0, url("../Images/AFH4.jpeg") 600px 0, url("../Images/AFH2.jpeg")800px 0;
+  background: url("../Images/SH1.jpeg")0 0, url("../Images/SH2.jpeg")200px 0, url("../Images/SH3.jpeg")400px 0, url("../Images/SH4.jpeg") 600px 0, url("../Images/SH5.jpeg")800px 0;
   background-repeat: no-repeat;
   background-size: 200px 200px;
 }
-.outer:hover .inner2,.outer:focus .inner2{
+.outer:hover .innerS,.outer:focus .innerS{
+animation:swap 5s linear infinite;  
+}
+.outer:focus{
+  border:2px solid red;
+}
+@keyframes swap{
+  0%{transform:translateX(-200px)}
+  19.999%{transform:translateX(-200px)}
+  20%{transform:translateX(-400px)}
+  39.999%{transform:translateX(-400px)}
+  40%{transform:translateX(-600px)}
+  59.999%{transform:translateX(-600px)}
+  60%{transform:translateX(-800)}
+  79.999%{transform:translateX(-800)}
+  80%{transform:translateX(0)}
+  99.999%{transform:translateX(0)}
+}
+
+.innerP {
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  display:block;
+  background: url("../Images/PH1.jpg")0 0, url("../Images/PH2.jpg")200px 0, url("../Images/PH3.jpg")400px 0, url("../Images/PH4.jpg") 600px 0, url("../Images/PH5.jpg")800px 0;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.outer:hover .innerP,.outer:focus .innerP{
+animation:swap 5s linear infinite;  
+}
+.outer:focus{
+  border:2px solid red;
+}
+@keyframes swap{
+  0%{transform:translateX(-200px)}
+  19.999%{transform:translateX(-200px)}
+  20%{transform:translateX(-400px)}
+  39.999%{transform:translateX(-400px)}
+  40%{transform:translateX(-600px)}
+  59.999%{transform:translateX(-600px)}
+  60%{transform:translateX(-800)}
+  79.999%{transform:translateX(-800)}
+  80%{transform:translateX(0)}
+  99.999%{transform:translateX(0)}
+}
+
+.innerC {
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  display:block;
+  background: url("../Images/C1.jpg")0 0, url("../Images/C2.jpeg")200px 0, url("../Images/C3.jpeg")400px 0, url("../Images/C4.jpeg") 600px 0, url("../Images/C5.jpeg")800px 0;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.outer:hover .innerC,.outer:focus .innerC{
+animation:swap 5s linear infinite;  
+}
+.outer:focus{
+  border:2px solid red;
+}
+@keyframes swap{
+  0%{transform:translateX(-200px)}
+  19.999%{transform:translateX(-200px)}
+  20%{transform:translateX(-400px)}
+  39.999%{transform:translateX(-400px)}
+  40%{transform:translateX(-600px)}
+  59.999%{transform:translateX(-600px)}
+  60%{transform:translateX(-800)}
+  79.999%{transform:translateX(-800)}
+  80%{transform:translateX(0)}
+  99.999%{transform:translateX(0)}
+}
+
+.innerA {
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  display:block;
+  background: url("../Images/A1.jpeg")0 0, url("../Images/A2.jpeg")200px 0, url("../Images/A3.jpeg")400px 0, url("../Images/A4.jpeg") 600px 0, url("../Images/A5.jpeg")800px 0;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.outer:hover .innerA,.outer:focus .innerA{
 animation:swap 5s linear infinite;  
 }
 .outer:focus{

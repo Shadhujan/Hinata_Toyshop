@@ -1,41 +1,41 @@
+<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-<!--
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
--->
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, maximum-scale = 1.0, minimum-scale=1.0,initial-scale=1.0">	
     <title> Home - HinataToyshop</title>
-	
-	
-<link href="CSS/Home - HinataToyshop.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Home - HinataToyshop.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-	<div id="HeaderHere">	</div>	
-	<script>
-        load("Header - HinataToyshop.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById("HeaderHere").innerHTML = req.responseText;
-        }
-		
-		function onMouseOver(){
-			let 
-			
-		}
-    </script>
-    <br><br><br>	<br><br>
+	
+<body onLoad="load()">
+	<div id="HeaderHere"> </div>	
+		<script>
+			load("Header - HinataToyshop.html");
+			function load(url)
+			{
+				req = new XMLHttpRequest();
+				req.open("GET", url, false);
+				req.send(null);
+				document.getElementById("HeaderHere").innerHTML = req.responseText;
+			}
+
+			/*function onMouseOver(){
+				let 
+
+			}*/
+		</script>
+	
+    <br><br><br><br><br>
     
-    <div id="HomeTable">
-      
-        <div class="HomeName"><img src="Images/randBG.png" width="1518px" alt="randBG"></div>
+    <div id="HomeTable">      
+        <div class="HomeName" id="homeName">
+			<img src="Images/randBG.png" width="1518px" alt="randBG">
+		</div>
         <br><br>
         <div id="HomeContentRow">
 			<div class="box">
 				<!--<img src="#">-->
-				<a href="#" class="outer">
+				<a href="ProductPage1 - HinataToyshop.html" class="outer">
 					<span class="innerAF">
 					</span>
 				</a>
@@ -47,7 +47,7 @@
 			</div>
 			<div class="box">
 				<!--<img src="#">-->
-				<a href="#" class="outer">
+				<a href="ProductPage1 - HinataToyshop.html" class="outer">
 					<span class="innerS">
 					</span>
 				</a>
@@ -59,7 +59,7 @@
 			</div>
 			<div class="box">
 				<!--<img src="#">-->
-				<a href="#" class="outer">
+				<a href="ProductPage1 - HinataToyshop.html" class="outer">
 					<span class="innerP">
 					</span>
 				</a>
@@ -71,7 +71,7 @@
 			</div>
 			<div class="box">
 				<!--<img src="#">-->
-				<a href="#" class="outer">
+				<a href="ProductPage1 - HinataToyshop.html" class="outer">
 					<span class="innerC">
 					</span>
 				</a>
@@ -83,7 +83,7 @@
 			</div>
 			<div class="box">
 				<!--<img src="#">-->
-				<a href="#" class="outer">
+				<a href="ProductPage1 - HinataToyshop.html" class="outer">
 					<span class="innerA">
 					</span>
 				</a>
@@ -95,18 +95,17 @@
 			</div>
         </div>
     </div>
-<div id="FooterHere">
-	<script>
-        load("Footer - HinataToyshop.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById("FooterHere").innerHTML = req.responseText;
-        }
-    </script>
-</div>
-
-
+	
+	<div id="FooterHere"> </div>
+		<script>
+			load("Footer - HinataToyshop.html");
+			function load(url)
+			{
+				req = new XMLHttpRequest();
+				req.open("GET", url, false);
+				req.send(null);
+				document.getElementById("FooterHere").innerHTML = req.responseText;
+			}
+		</script>
 </body>
+</html>

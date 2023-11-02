@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	width: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/anime-clouds.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+/*
+#HeaderHere{
+	margin: 0;
+}
+*/
+
+.header{
+	background: rgba(242,11,15,1.00);
+}
+/*
+#AF{
+	margin: 10% 0 0 0;
+}
+*/
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates three equal-width columns */
+    gap: 20px; /* Adds some space between grid items */
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container on the page */
+}
+
+.product {
+    background-color: rgba(175,193,220,0.80); /* Add a background color for each product box */
+    padding: 20px; /* Add some padding to the product box, like imaginary border */
+    border: none; 
+}
+.product:hover{
+	box-shadow: 1px 1px 15px 10px white;
+	padding: 10px;
+	transition: 0.3s, smooth;
+}
+
+.product-head {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+	text-align: center;
+	
+}
+
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+	border-radius: 20px;
+}
+/*
+img:hover{
+	transition: 2s;
+	
+}
+*/
+
+.price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+#cartbtn{
+	border-radius: 25px;
+	border: none;
+	background: rgba(207,223,232,0.66);
+	
+}
+
+h1{
+	text-align: center;
+	padding: 20px;
+	color: aliceblue;
+}
+
+.nav {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 1), transparent);
+    
+  }
+  
+  .nav-logo {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Osake";
+  }
+  
+  
+
+  .nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15;
+    margin: 0 25px;
+    }
+
+  .link:hover, .active{
+    border-bottom: 2px solid #fff;
+  }
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background-color: rgba(255,255,255, 0.4);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+  }
+.btn:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255, 0.7);
+	
+}
+
+#login{
+	
+	margin-left: 250px;
+/*	padding-left: 80px;*/
+}
